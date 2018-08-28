@@ -1,2 +1,0 @@
-# OtherPrograms
-C++ Different Programs
