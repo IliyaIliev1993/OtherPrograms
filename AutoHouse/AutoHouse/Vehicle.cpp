@@ -50,6 +50,8 @@ Vehicle::Vehicle(  std::string sMade, std::string sModel, int nYear, double dPri
     m_sOther = sOthers;
 }
 
+// Setters
+
 void Vehicle::SetMade( std::string sMade )
 {
     m_sMade = sMade;
@@ -70,27 +72,95 @@ void Vehicle::SetPrice( double dPrice )
     m_dPrice = dPrice;
 }
 
-void Vehicle::SetKilometers(double dKilometers)
+void Vehicle::SetKilometers( double dKilometers )
 {
     m_dKilometers = dKilometers;
 }
 
-void Vehicle::SetLiters(double dLiters)
+void Vehicle::SetLiters( double dLiters )
 {
     m_dLiters = dLiters;
 }
 
-void Vehicle::SetTypeOfEngine(std::string sTypeOfEngine)
+void Vehicle::SetTypeOfEngine( std::string sTypeOfEngine )
 {
     m_sTypeOfEngine = sTypeOfEngine;
 }
 
-void Vehicle::SetTransmission(std::string sTransmission)
+void Vehicle::SetTransmission( std::string sTransmission )
 {
     m_sTransmission = sTransmission;
 }
 
-void Vehicle::SetOthers(std::string sOthers)
+void Vehicle::SetOthers( std::string sOthers )
 {
     m_sOther = sOthers;
+}
+
+//Getters
+
+std::string Vehicle::GetMade()
+{
+    return m_sMade;
+}
+
+std::string Vehicle::GetModel()
+{
+    return m_sModel;
+}
+
+int Vehicle::GetYear()
+{
+    return m_nYear;
+}
+
+double Vehicle::GetPrice()
+{
+    return m_dPrice;
+}
+
+double Vehicle::GetKilometers()
+{
+    return m_dKilometers;
+}
+
+double Vehicle::GetLiters()
+{
+    return m_dLiters;
+}
+
+std::string Vehicle::GetTypeOfEngine()
+{
+    return m_sTypeOfEngine;
+}
+
+std::string Vehicle::GetTransmission()
+{
+    return m_sTransmission;
+}
+
+std::string Vehicle::GetOthers()
+{
+    return m_sOther;
+}
+
+void Vehicle::PrintInfo()
+{
+    std::cout << " Made -> " << m_sMade << std::endl;
+    
+    std::cout << " Model -> " << m_sModel << std::endl;
+    
+    std::cout << " Year -> " << m_nYear << std::endl;
+    
+    std::cout << " Price -> " << m_dPrice << std::endl;
+    
+    std::cout << " Kilometers -> " << m_dKilometers << std::endl;
+    
+    std::cout << " Engine Liters -> " << m_dLiters << std::endl;
+    
+    std::cout << " Type Of Engine -> " << m_sTypeOfEngine << std::endl;
+    
+    std::cout << " Transmission -> " << m_sTransmission << std::endl;
+    
+    std::cout << " Others -> " << m_sOther << std::endl;
 }

@@ -85,6 +85,7 @@ public:
     
     std::string GetOthers();
     
+    void PrintInfo();
     
     
 };
